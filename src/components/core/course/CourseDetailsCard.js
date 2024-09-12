@@ -59,7 +59,7 @@ function CourseDetailsCard({
                 Rs. {CurrentPrice}
                 </div>
                 <div className="flex flex-col gap-4">
-                    {/* <button className="yellowButton"
+                    <button className="yellowButton"
               onClick={
                 user && course?.studentsEnrolled.includes(user?._id)
                   ? () => navigate("/dashboard/enrolled-courses")
@@ -68,11 +68,6 @@ function CourseDetailsCard({
                 ? "Go To Course"
                 : "Buy Now"}
 
-                    </button> */}
-
-                    { /* changes will be done at when payment gateway is done (with razorpay) */}
-                    <button className="yellowButton">
-                      Buy Now
                     </button>
                     {(!user || !course?.studentsEnrolled.includes(user?._id)) && (
               <button onClick={handleAddToCart} className="blackButton">
